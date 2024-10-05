@@ -21,6 +21,7 @@ import com.sun.tools.javac.tree.TreeMaker;
 import com.sun.tools.javac.util.Context;
 import com.sun.tools.javac.util.Names;
 import io.github.fishlikewater.raiden.processor.context.RaidenContext;
+import lombok.Getter;
 
 import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.Filer;
@@ -39,6 +40,7 @@ import javax.lang.model.util.Types;
  */
 public abstract class AbstractRaidenProcessor extends AbstractProcessor {
 
+    @Getter
     private RaidenContext raidenContext;
 
     public AbstractRaidenProcessor(RaidenContext raidenContext) {
