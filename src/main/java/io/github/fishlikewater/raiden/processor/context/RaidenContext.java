@@ -27,6 +27,7 @@ import lombok.NoArgsConstructor;
 import javax.annotation.processing.Filer;
 import javax.annotation.processing.Messager;
 import javax.lang.model.util.Types;
+import java.io.Serial;
 import java.io.Serializable;
 
 /**
@@ -42,6 +43,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class RaidenContext implements Serializable {
 
+    @Serial
     private static final long serialVersionUID = 5079936240211719665L;
 
     protected Filer filer;
